@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/styles/style.css" rel="stylesheet">
+</head>
+
+<body style="background-color:gainsboro">
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="cats.html">Cats</a></li>
+            <li><a href="birds.html">Birds</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+    </div>
+
+    <div class="big-container">
+        <div id="search-bar">
+            <input type="text" id="search" placeholder="Search">
+        </div>
+        <div class="dogs">
+            <div class="elements">
+                <label>Dogs</label>
+                <button onclick="redirectToDogs()">View all</button>
+            </div>
+            <div id="line"></div>
+
+            <div id="card-container" class="hidden">
+            </div>
+        </div>
+
+        <div class="cats">
+            <div class="elements">
+                <label>Cats</label>
+                <button onclick="redirectToCats()">View all</button>
+            </div>
+            <div id="line"></div>
+
+            <div id="card-container1" class="hidden">
+            </div>
+        </div>
+
+
+        <div class="birds">
+            <div class="elements">
+                <label>Birds</label>
+                <button onclick="redirectToBirds()">View all</button>
+            </div>
+            <div id="line"></div>
+
+            <div id="card-container2" class="hidden">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="modal">
+    </div>
+
+    <script src="/scripts/main.js">
+    </script>
+</body>
+</html>
